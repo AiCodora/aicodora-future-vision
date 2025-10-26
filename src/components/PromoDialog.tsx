@@ -13,7 +13,7 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useToast } from "@/hooks/use-toast";
 import { Send, Zap, CheckCircle2 } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
+
 
 interface PromoDialogProps {
   open: boolean;
@@ -65,33 +65,12 @@ const PromoDialog = ({ open, onOpenChange }: PromoDialogProps) => {
     setIsSubmitting(true);
 
     try {
-      const { error } = await supabase.functions.invoke('send-telegram-message', {
-        body: {
-          ...formData,
-          description: formData.message || "Заявка на акцию: Экспресс-разработка лендинга за 30 000₽",
-          projectType: "Акция - Лендинг 30 000₽",
-          formType: "Заявка на акцию"
-        }
-      });
-
-      if (error) throw error;
-
-      // Send auto-reply email to client
-      try {
-        await supabase.functions.invoke('send-auto-reply', {
-          body: { 
-            name: formData.name,
-            email: formData.email,
-            type: 'promo'
-          }
-        });
-      } catch (emailError) {
-        console.error('Auto-reply email failed:', emailError);
-      }
+      // Form submission logic removed - backend integration needed
+      console.log('Promo form data:', formData);
 
       toast({
-        title: "Спасибо за заявку!",
-        description: "Мы свяжемся с вами в ближайшее время. Проверьте email для подтверждения.",
+        title: "Форма отправлена",
+        description: "Данные формы выведены в консоль",
       });
 
       setFormData({
@@ -107,7 +86,7 @@ const PromoDialog = ({ open, onOpenChange }: PromoDialogProps) => {
       console.error('Error:', error);
       toast({
         title: "Ошибка",
-        description: "Не удалось отправить заявку. Попробуйте позже.",
+        description: "Произошла ошибка при отправке формы",
         variant: "destructive",
       });
     } finally {

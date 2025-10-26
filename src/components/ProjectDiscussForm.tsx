@@ -8,7 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Send } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import projectCubeImage from "@/assets/project-discuss-cube.png";
-import { supabase } from "@/integrations/supabase/client";
+
 
 const ProjectDiscussForm = () => {
   const { toast } = useToast();
@@ -58,31 +58,12 @@ const ProjectDiscussForm = () => {
     setIsSubmitting(true);
 
     try {
-      const { error } = await supabase.functions.invoke('send-telegram-message', {
-        body: {
-          ...formData,
-          formType: "Обсуждение проекта"
-        }
-      });
-
-      if (error) throw error;
-
-      // Send auto-reply email to client
-      try {
-        await supabase.functions.invoke('send-auto-reply', {
-          body: { 
-            name: formData.name,
-            email: formData.email,
-            type: 'consultation'
-          }
-        });
-      } catch (emailError) {
-        console.error('Auto-reply email failed:', emailError);
-      }
+      // Form submission logic removed - backend integration needed
+      console.log('Project discussion form data:', formData);
 
       toast({
-        title: "Спасибо за обращение!",
-        description: "Мы свяжемся с вами в ближайшее время. Проверьте email.",
+        title: "Форма отправлена",
+        description: "Данные формы выведены в консоль",
       });
 
       setFormData({
@@ -99,7 +80,7 @@ const ProjectDiscussForm = () => {
       console.error('Error:', error);
       toast({
         title: "Ошибка",
-        description: "Не удалось отправить сообщение. Попробуйте позже.",
+        description: "Произошла ошибка при отправке формы",
         variant: "destructive",
       });
     } finally {

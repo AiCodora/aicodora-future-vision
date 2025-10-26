@@ -13,7 +13,7 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useToast } from "@/hooks/use-toast";
 import { Send } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
+
 
 interface ServiceConsultationDialogProps {
   open: boolean;
@@ -70,20 +70,12 @@ const ServiceConsultationDialog = ({
     setIsSubmitting(true);
 
     try {
-      const { error } = await supabase.functions.invoke('send-telegram-message', {
-        body: {
-          ...formData,
-          description: formData.message,
-          projectType: serviceTitle,
-          formType: `Консультация - ${serviceTitle}`
-        }
-      });
-
-      if (error) throw error;
-
+      // Form submission logic removed - backend integration needed
+      console.log('Form data:', formData);
+      
       toast({
-        title: "Спасибо за обращение!",
-        description: "Мы свяжемся с вами в ближайшее время",
+        title: "Форма отправлена",
+        description: "Данные формы выведены в консоль",
       });
 
       // Reset form and close dialog
@@ -100,7 +92,7 @@ const ServiceConsultationDialog = ({
       console.error('Error:', error);
       toast({
         title: "Ошибка",
-        description: "Не удалось отправить сообщение. Попробуйте позже.",
+        description: "Произошла ошибка при отправке формы",
         variant: "destructive",
       });
     } finally {
