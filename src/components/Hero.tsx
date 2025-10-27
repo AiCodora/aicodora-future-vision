@@ -33,7 +33,7 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden">
       <div className="max-w-4xl mx-auto text-center relative z-10 animate-fade-in-hero">
         {/* Badge */}
-        <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/5 backdrop-blur-md border border-white/10 text-white/60 text-sm font-medium mb-4 mt-6 sm:mt-10 animate-fade-in-badge">
+        <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/5 backdrop-blur-md border border-white/10 text-white/60 text-sm font-medium mb-4 mt-10 sm:mt-16 animate-fade-in-badge">
           <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-blink"></span>
           AiCodora: Полный цикл разработки
         </div>
