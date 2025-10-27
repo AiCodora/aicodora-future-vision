@@ -106,10 +106,10 @@ const ServicesSection = () => {
             <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse" />
             Наши услуги
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
             Услуги <span className="text-primary">Разработки и Автоматизации</span>
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
             Полный спектр современных цифровых решений для вашего бизнеса
           </p>
         </div>

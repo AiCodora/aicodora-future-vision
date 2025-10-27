@@ -67,13 +67,13 @@ const TestimonialsSection = () => {
   }, [currentIndex]);
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-primary/5 to-background">
+    <section className="py-12 sm:py-16 md:py-20 px-4 bg-gradient-to-b from-primary/5 to-background">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Отзывы клиентов
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base sm:text-lg">
             Что говорят о нас наши партнеры
           </p>
         </div>
@@ -86,7 +86,7 @@ const TestimonialsSection = () => {
                 isAnimating ? "opacity-0 scale-95" : "opacity-100 scale-100"
               }`}
             >
-              <Card className="p-8 md:p-12 bg-card relative">
+              <Card className="p-6 sm:p-8 md:p-12 bg-card relative">
                 <Quote className="absolute top-8 right-8 h-16 w-16 text-primary/10" />
                 
                 <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
@@ -98,7 +98,7 @@ const TestimonialsSection = () => {
                   </div>
 
                   {/* Testimonial text */}
-                  <p className="text-xl md:text-2xl mb-8 leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 leading-relaxed">
                     "{testimonials[currentIndex].text}"
                   </p>
 

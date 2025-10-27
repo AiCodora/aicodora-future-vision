@@ -100,14 +100,14 @@ const ProjectDiscussForm = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 items-start">
+        <div className="grid md:grid-cols-2 gap-6 items-start max-w-6xl mx-auto">
           {/* Left Side - Image and Text */}
           <div className="space-y-4">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl hidden md:block">
               <img
                 src={projectCubeImage}
                 alt="Автоматизация бизнес-процессов"
-                className="w-full h-[350px] object-cover"
+                className="w-full h-[300px] md:h-[350px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
             </div>

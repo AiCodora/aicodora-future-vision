@@ -4,10 +4,10 @@ import { CreditCard, ArrowRight } from "lucide-react";
 
 const InstallmentBanner = () => {
   return (
-    <section className="py-16 px-4">
+    <section className="py-12 sm:py-16 px-4">
       <div className="max-w-5xl mx-auto">
         <Card className="relative overflow-hidden bg-gradient-to-r from-primary/10 via-primary/5 to-background border-primary/20">
-          <div className="p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="p-6 sm:p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8">
             <div className="flex-1">
               <div className="flex items-center gap-3 mb-4">
                 <div className="bg-primary/20 p-3 rounded-lg">
@@ -16,11 +16,11 @@ const InstallmentBanner = () => {
                 <span className="text-2xl font-bold">Т-Банк</span>
               </div>
               
-              <h3 className="text-3xl md:text-4xl font-bold mb-4">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
                 Оплата в рассрочку
               </h3>
               
-              <p className="text-muted-foreground text-lg mb-6">
+              <p className="text-muted-foreground text-base sm:text-lg mb-4 sm:mb-6">
                 Разделите платеж на удобные части без переплат. Рассрочка до 12 месяцев от Т-Банка
               </p>
               

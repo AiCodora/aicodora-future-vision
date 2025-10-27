@@ -70,14 +70,14 @@ const BlogSliderSection = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-card/30">
+    <section className="py-12 sm:py-16 md:py-20 px-4 bg-card/30">
       <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-end mb-12">
+        <div className="flex justify-between items-end mb-8 sm:mb-12">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-4">
               Полезные статьи
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-sm sm:text-base md:text-lg">
               Экспертные материалы о технологиях и автоматизации
             </p>
           </div>

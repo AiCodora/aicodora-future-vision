@@ -32,10 +32,10 @@ const AboutSection = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
             Почему <span className="text-primary">AiCodora?</span>
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
             Мы — современное digital-агентство, специализирующееся на создании веб-сервисов, 
             Telegram-ботов и внедрении AI-автоматизаций. Превращаем идеи в работающие продукты 
             с использованием передовых технологий и профессионального подхода.

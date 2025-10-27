@@ -12,12 +12,12 @@ const About = () => {
       
       <main className="flex-grow relative z-10 pt-20">
         {/* Hero Section */}
-        <section className="py-20 px-4">
+        <section className="py-12 sm:py-16 md:py-20 px-4">
           <div className="container mx-auto max-w-6xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 text-foreground">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 sm:mb-6 text-foreground">
               О компании AiCodora
             </h1>
-            <p className="text-xl text-center text-muted-foreground max-w-3xl mx-auto mb-12">
+            <p className="text-base sm:text-lg md:text-xl text-center text-muted-foreground max-w-3xl mx-auto mb-8 sm:mb-12 px-4">
               Мы создаем инновационные цифровые решения, которые помогают бизнесу развиваться в эпоху искусственного интеллекта
             </p>
           </div>

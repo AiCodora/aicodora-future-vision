@@ -33,16 +33,16 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden">
       <div className="max-w-4xl mx-auto text-center relative z-10 animate-fade-in-hero">
         {/* Badge */}
-        <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/5 backdrop-blur-md border border-white/10 text-white/60 text-sm font-medium mb-4 mt-10 sm:mt-16 animate-fade-in-badge">
-          <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-blink"></span>
+        <div className="inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/5 backdrop-blur-md border border-white/10 text-white/60 text-xs sm:text-sm font-medium mb-3 sm:mb-4 mt-12 sm:mt-20 animate-fade-in-badge">
+          <span className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-primary rounded-full mr-2 animate-blink"></span>
           AiCodora: Полный цикл разработки
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-balance mb-6 animate-fade-in-heading">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-balance mb-4 sm:mb-6 animate-fade-in-heading">
           <span className="text-foreground">Разработка цифровых решений</span>
           <br />
-          <span className="inline-flex items-center justify-center flex-wrap gap-2 mt-4 sm:mt-6 md:mt-8">
+          <span className="inline-flex items-center justify-center flex-wrap gap-2 mt-3 sm:mt-4 md:mt-6 lg:mt-8">
             <span className="text-foreground">Делаем</span>
             <RotatingText
               texts={["Сайты", "ТГ-ботов", "Автоматизации", "AI-решения", "Веб-сервисы", "TG miniApp", "Видеоконтент"]}
@@ -60,15 +60,15 @@ const Hero = () => {
         </h1>
 
         {/* Subheading */}
-        <p className="text-base sm:text-xl md:text-2xl text-white text-balance max-w-sm sm:max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-4 sm:px-0 animate-fade-in-subheading font-light">
+        <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-white text-balance max-w-sm sm:max-w-3xl mx-auto mb-6 sm:mb-8 md:mb-12 leading-relaxed px-4 sm:px-0 animate-fade-in-subheading font-light">
           Превращаем ваши идеи в работающие digital-продукты. Автоматизируем процессы, создаём сайты и боты, интегрируем AI — освобождаем ваше время для роста бизнеса
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 sm:mb-16 animate-fade-in-buttons">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8 md:mb-16 animate-fade-in-buttons px-4">
           <Button
             size="lg"
-            className="bg-white text-black rounded-full px-8 py-6 text-lg font-medium transition-all duration-300 hover:bg-gray-50 hover:scale-105 hover:shadow-lg group cursor-pointer relative overflow-hidden w-full sm:w-auto"
+            className="bg-white text-black rounded-full px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg font-medium transition-all duration-300 hover:bg-gray-50 hover:scale-105 hover:shadow-lg group cursor-pointer relative overflow-hidden w-full sm:w-auto"
             asChild
           >
             <a href="/#contact-form">
@@ -80,7 +80,7 @@ const Hero = () => {
           <Button
             variant="outline"
             size="lg"
-            className="rounded-full px-8 py-6 text-lg font-medium border-border hover:bg-accent transition-all duration-200 hover:scale-105 group bg-transparent cursor-pointer w-full sm:w-auto"
+            className="rounded-full px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg font-medium border-border hover:bg-accent transition-all duration-200 hover:scale-105 group bg-transparent cursor-pointer w-full sm:w-auto"
             asChild
           >
             <a href="#services">
