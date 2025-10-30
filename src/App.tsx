@@ -21,6 +21,10 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import ComingSoon from "./pages/ComingSoon";
 import NotFound from "./pages/NotFound";
+import ContractDevelopment from "./pages/ContractDevelopment";
+import ContractSupport from "./pages/ContractSupport";
+import BriefWebsite from "./pages/BriefWebsite";
+import BriefTelegram from "./pages/BriefTelegram";
 const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -47,6 +51,10 @@ const App = () => (
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/terms" element={<Terms />} />
               <Route path="/coming-soon" element={<ComingSoon />} />
+              <Route path="/documents/contract-development" element={<ContractDevelopment />} />
+              <Route path="/documents/contract-support" element={<ContractSupport />} />
+              <Route path="/documents/brief-website" element={<BriefWebsite />} />
+              <Route path="/documents/brief-telegram" element={<BriefTelegram />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

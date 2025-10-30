@@ -71,16 +71,14 @@ const Contacts = () => {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { name: "Шаблон договора на разработку", file: "contract-development.html" },
-                { name: "Шаблон договора на поддержку", file: "contract-support.html" },
-                { name: "Бриф на разработку сайта", file: "brief-website.html" },
-                { name: "Бриф на Telegram-бота", file: "brief-bot.html" },
+                { name: "Шаблон договора на разработку", file: "contract-development" },
+                { name: "Шаблон договора на поддержку", file: "contract-support" },
+                { name: "Бриф на разработку сайта", file: "brief-website" },
+                { name: "Бриф на Telegram-бота", file: "brief-telegram" },
               ].map((doc) => (
                 <a
                   key={doc.file}
                   href={`/documents/${doc.file}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="w-full"
                 >
                   <Card className="p-6 hover:shadow-lg transition-all group cursor-pointer h-full">
