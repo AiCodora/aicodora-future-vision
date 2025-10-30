@@ -84,12 +84,12 @@ const Contacts = () => {
                   className="w-full"
                 >
                   <Card className="p-6 hover:shadow-lg transition-all group cursor-pointer h-full">
-                    <div className="flex flex-col items-center text-center">
+                    <div className="flex flex-col items-center text-center h-full">
                       <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-lg mb-4 group-hover:scale-110 transition-transform">
                         <FileText className="h-8 w-8 text-primary" />
                       </div>
-                      <h3 className="font-semibold mb-3">{doc.name}</h3>
-                      <Button variant="outline" size="sm" className="gap-2 pointer-events-none">
+                      <h3 className="font-semibold mb-4 flex-grow">{doc.name}</h3>
+                      <Button variant="outline" size="sm" className="gap-2 pointer-events-none mt-auto">
                         <Download className="h-4 w-4" />
                         Открыть
                       </Button>
